@@ -11,21 +11,23 @@
 # 2. Keep grand_total and total_per_person hardcoded for now. They won't be entered by the user.
 # 3. Run the program and make sure your prompts are clear and the display looks right.
 
-event = input("Enter the event name:")
-cost = input("enter the cost:")
+# input("Service charge? ") 
+# input("Was there a tip or a service charge? Enter a whole number (e.g. 20 for 20%: ")
+
+event = input("What was the event or occasion? ")
+cost = input("How much was it? ") 
 service_charge = input("Was there a tip or a service charge? Enter a whole number (e.g. 20 for 20%: ")
-group_size =input("how many people are you with: ")
-grand_total = input("Enter th amount number for the bill: ")
-total_per_person = input("Enter the total for each member: ")
+group_size = input("How many people were in your group? ")
+grand_total = 330
+total_per_person = 110
 
-
-print()
 print("Welcome to PayUp!")
+print() 
+print(f"Here's the breakdown for {event}:")
 print()
-print(f"Here's the breakdown for dinner at {event}:")
-print(f"cost: ${Cost}")
-print(f"Service charges: ${Service_charges}")
-print(f"Group size: {Group_size}")
-print(f"Grand total: ${Grand_total}")
+print(f"Cost: ${cost}")
+print(f"Service charges: ${service_charge}")
+print(f"Group size: {group_size}")
+print(f"Grand total: ${grand_total}")
 print()
-print(f"Each person must Payup: ${Each_person_must_PayUp}")
+print(f"Each person must PayUp: ${total_per_person}")
