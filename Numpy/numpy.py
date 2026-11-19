@@ -53,3 +53,29 @@ print("Random normal array:", random_normal_array) #output: [[-0.41675785  1.382
 random_ranf_array = np.random.ranf((2, 3))
 print("Random ranf array:", random_ranf_array) #output: [[0.39804426 0.73799541 0.18249173] [0.17545176 0.53155137 0.53182759]]
 
+
+
+
+import numpy as np
+
+# Create an array
+marks = np.array([85, 65, 90, 55, 75])
+
+# Display all marks
+print("All marks:", marks)
+
+# Access one value
+print("First mark:", marks[0])
+
+# Select some values
+print("Selected marks:", marks[1:4])
+
+# Calculate average
+print("Average:", np.mean(marks))
+
+# Find highest and lowest
+print("Highest:", np.max(marks))
+print("Lowest:", np.min(marks))
+
+# Filter marks above 70
+print("Marks above 70:", marks[marks > 70])
